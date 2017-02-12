@@ -1,0 +1,65 @@
+.pin_input {
+    width: 50%;
+    padding-top: 44%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 30%;
+}
+
+.div_hru_0 {
+    padding-top:10%;
+    text-align: center;
+    font-size: x-large;
+    display: none;
+}
+.div_hru_1 {
+    padding-top:10%;
+    text-align: center;
+    font-size: x-large;
+    display: none;
+}
+.div_hru_2 {
+    padding-top:10%;
+    text-align: center;
+    font-size: x-large;
+    display: none;
+}
+.btn-style {
+    margin-top: 10%;
+    margin-left: 37%;
+    border: solid 2px #ffffff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.0);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.0);
+    font-size: 20px;
+    color: #e7ebdd;
+    padding: 1px 10px;
+    background: #121212;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #121212), color-stop(100%, #050505));
+    background: -moz-linear-gradient(top, #121212 0%, #050505 100%);
+    background: -webkit-linear-gradient(top, #121212 0%, #050505 100%);
+    background: -o-linear-gradient(top, #121212 0%, #050505 100%);
+    background: -ms-linear-gradient(top, #121212 0%, #050505 100%);
+    background: linear-gradient(top, #121212 0%, #050505 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#050505', GradientType=0);
+}
+
+input[type=number] {
+    -webkit-text-security: disc;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Medium.ttf);
+}
+body {
+  font-family: Roboto-Regular;
+}
+h3{ text-align: center;
+    padding-top: 2%;
+    font-size: larger;
+   }
+   

@@ -5,6 +5,18 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home View"
+    "title": "Home"
+  },
+  "picture": {
+    "title": "pic_view"
+  },
+  "missing": {
+    "title": "missing_view"
+  },
+  "mithra": {
+    "title": "mithra"
+  },
+  "sravani": {
+    "title": "sravani"
   }
 }

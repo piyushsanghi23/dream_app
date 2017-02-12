@@ -1,0 +1,29 @@
+<body><div data-role="view" data-title="View" data-layout="main" data-model="app.picture" data-show="app.picture.onShow" data-after-show="app.picture.afterShow" id="pictureScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.picture.title"></span>
+
+        </div>
+    </header>
+<div id="hru_2" class="div_hru_2">
+    Missing Pics
+</div>
+<div id="enter_pin_2">
+    <h3>To skip entering the pin 3 times , click on above tabs once and then enter pin </h3>
+    <!-- START_CUSTOM_CODE_home -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <input id="pin_2" class="pin_input" oninput="maxLengthCheck(this)" maxlength="4" type="number" placeholder="Enter Pin" name="password" required />
+    <button class="btn-style" onclick="f3()">Submit</button>
+</div>
+
+<div id="overlay_2" style="display:none" class="w3-container w3-center w3-animate-bottom">
+   <br> Correct pin enter cheyii amma!
+    </div>
+    <!-- START_CUSTOM_CODE_picture -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    
+    <!-- END_CUSTOM_CODE_picture -->
+</div>
+
+</body>

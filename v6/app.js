@@ -22,7 +22,6 @@
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
-                skin: 'nova',
                 initial: 'components/home/view.html'
             });
 
@@ -36,11 +35,11 @@
             allItems = $('#navigation-container-more').find('a'),
             navigationShowMoreContent = '';
 
-            allItems.each(function(index) {
-                navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
-            });
+        allItems.each(function(index) {
+            navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
+        });
 
-             navigationShowMoreView.html(navigationShowMoreContent);
+        navigationShowMoreView.html(navigationShowMoreContent);
         kendo.bind($('#navigation-show-more-view'), app.showMore.viewModel);
 
         app.notification = $("#notify");
@@ -63,6 +62,7 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
+            document.addEventListener("backbutton", onBackKeyDown, false);
             bootstrap();
         }, false);
     } else {
@@ -208,5 +208,9 @@
 
 // START_CUSTOM_CODE_kendoUiMobileApp
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
+function onBackKeyDown() {
+    // back button function
+      navigator.app.exitApp();
+}
 
 // END_CUSTOM_CODE_kendoUiMobileApp

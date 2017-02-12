@@ -5,19 +5,55 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "Home",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "picture",
+      "components": [],
+      "title": "pic_view",
+      "addToNavigation": true,
+      "icon": "camera"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "missing",
+      "components": [],
+      "title": "missing_view",
+      "addToNavigation": true,
+      "icon": "contacts"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "mithra",
+      "components": [],
+      "title": "mithra",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "sravani",
+      "components": [],
+      "title": "sravani",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "im3aub77otrmd48y",
+      "offlineStorage": true,
+      "title": "Backend Services"
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
   "transition": "slide",
   "showMoreTab": true,
-  "skin": "nova",
-  "skinMainColor": "#32364c",
-  "skinTextColor": "#ffffff",
-  "skinAccentColor": "#ff4350"
+  "skin": "native"
 }
